@@ -2,19 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>MamukieFish Bot 1v1</title>
   <link rel="stylesheet" href="forMamukieFishBot1v1.css">
 </head>
 <body>
 
   <div id="turnDisplay">White to move</div>
-  <div id="board"></div>
 
-<div class="controls">
-  <button id="colorToggleBtn">Bot Plays: Black</button>
-  <button id="flipButton">Flip Board</button>
-</div>
+  <div class="game-container">
+    
+    <div id="board"></div>
+
+    <div class="bot-sidebar">
+      <div class="bot-card">
+        <div class="bot-name">MamukieFish</div>
+        <div class="elo-tag">2350 ELO</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="controls">
+    <button id="colorToggleBtn">Bot Plays: Black</button>
+    <button id="flipButton">Flip Board</button>
+  </div>
 
   <div id="promotionPicker" class="picker hidden">
     <div class="picker-content">
@@ -30,4 +42,4 @@
 
   <script src="MamukieFish-bot.js"></script>
 </body>
-</html>`
+</html>
